@@ -1,0 +1,40 @@
+# Node.js / React Frontend
+node_modules/
+client/dist/
+client/build/
+.npm
+
+# Python / FastAPI Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Generated Data & ML Cache
+*.csv
+*.joblib
+*.pkl
+
+# Environment Variables
+.env
+.env.local
+
+# AI / Agent Directories & Meta Files
+.agent/
+.agents/
+.codex/
+.gemini/
+.impeccable/
+PRODUCT.md
+DESIGN.md
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
