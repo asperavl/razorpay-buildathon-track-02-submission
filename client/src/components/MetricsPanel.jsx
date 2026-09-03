@@ -55,7 +55,8 @@ export function MetricsPanel({ metricsData, liveMatrix, viewMode, setViewMode })
   const liveRecall    = (liveTP + liveFN) > 0 ? liveTP / (liveTP + liveFN) : null;
   const liveF1        = (livePrecision !== null && liveRecall !== null && (livePrecision + liveRecall) > 0)
     ? 2 * livePrecision * liveRecall / (livePrecision + liveRecall) : null;
-  const liveFPCost    = liveFP * 350.0;
+  // Estimate based on 15% friction on avg 20 txns per window * ₹1200 AOV
+  const liveFPCost    = liveFP * 3600;
 
   const isLive = viewMode === 'live';
   const P = isLive ? livePrecision  : m.precision;
@@ -159,7 +160,7 @@ export function MetricsPanel({ metricsData, liveMatrix, viewMode, setViewMode })
             ₹{C?.toLocaleString() || '0'}
           </div>
           <div style={{ fontSize: 9, color: 'var(--text-dim)', marginTop: 8, letterSpacing: '0.02em' }}>
-            BLOCKED LEGIT TXN × AVG ORDER
+            15% LTV LOSS ON BLOCKED VOL
           </div>
         </div>
       </div>

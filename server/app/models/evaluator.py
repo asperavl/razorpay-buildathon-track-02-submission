@@ -102,9 +102,9 @@ class HonestEvaluator:
         if amounts and len(amounts) == len(y_true):
             fp_amounts = [amt for gt, pr, amt in zip(y_true, y_pred, amounts) if gt == 0 and pr == 1]
             total_fp_volume = sum(fp_amounts)
-            false_positive_cost = total_fp_volume * 0.15
+            false_positive_cost = int(total_fp_volume * 0.15)
         else:
-            false_positive_cost = fp * 1200 * 0.15
+            false_positive_cost = int(fp * 1200 * 0.15)
 
         # ROC-optimal threshold discovery
         optimal = HonestEvaluator.find_optimal_threshold(y_true, scores)
