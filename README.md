@@ -5,7 +5,7 @@
 ![Dashboard](https://img.shields.io/badge/stack-FastAPI%20%2B%20React-blue)
 ![License](https://img.shields.io/badge/scope-defense--only-green)
 
-FraudPulse monitors live Indian merchant transaction streams, detects sudden anomalies using a production-grade ML ensemble, and reports evaluation metrics including the **cost of false positives in ₹**.
+FraudPulse monitors live Indian merchant transaction streams, detects sudden anomalies using an ML ensemble, and reports evaluation metrics including the **cost of false positives in ₹**.
 
 ---
 
