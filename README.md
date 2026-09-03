@@ -1,7 +1,6 @@
 # FraudPulse — Real-Time Fraud-Spike Detector
 
 > **Razorpay Buildathon — Track 02: AI Risk Manager**
-> Defense-Only · Honest Metrics · Explainable Alerts
 
 ![Dashboard](https://img.shields.io/badge/stack-FastAPI%20%2B%20React-blue)
 ![License](https://img.shields.io/badge/scope-defense--only-green)
@@ -77,7 +76,7 @@ Reported metrics on every load:
 | **F1 Score** | Harmonic mean of Precision and Recall |
 | **ROC-Optimal Threshold** | The decision cutoff that maximises F1 on held-out data |
 | **Detection Delay** | Seconds from spike start to first alert |
-| **False-Positive Cost ₹** | FP count × ₹350 avg order value — the real merchant friction cost |
+| **False-Positive Cost ₹** | FP count × 15% FP transaction cost — the real merchant friction cost |
 
 The **Live Session Matrix** updates in real time as you interact with the dashboard, giving a second evaluation dimension distinct from the held-out benchmark.
 
